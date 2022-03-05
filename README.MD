@@ -1,13 +1,15 @@
 # Results
 
 ```sh
+$ go test -bench=.
 goos: windows
 goarch: amd64
-pkg: github.com/gominima/benchmarks
+pkg: github.com/gominima/mux/_example
 cpu: Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
-BenchmarkMinimaStatic-8             7962            151200 ns/op           48230 B/op       1093 allocs/op
-BenchmarkMinimaGitHubAPI-8           642           1318892 ns/op          598181 B/op      10389 allocs/op
-BenchmarkMinimaGplusAPI-8          49812             28091 ns/op           11967 B/op        201 allocs/op
-BenchmarkMinimaParseAPI-8          50712             29137 ns/op           14203 B/op        212 allocs/op
+BenchmarkMinimaStatic-8            19346             54850 ns/op           23100 B/op        157 allocs/op
+BenchmarkMinimaGitHubAPI-8          8593            106954 ns/op           82739 B/op        537 allocs/op
+BenchmarkMinimaGplusAPI-8         229596              5702 ns/op            5641 B/op         35 allocs/op
+BenchmarkMinimaParseAPI-8         104377             11102 ns/op            8838 B/op         58 allocs/op
 PASS
-ok      github.com/gominima/benchmarks  11.668s
+ok      github.com/gominima/mux/_example        8.480s
+```
